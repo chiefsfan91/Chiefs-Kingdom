@@ -4,6 +4,65 @@
 <head>
 <title>My Personal Webpage</title>
 <style>
+.table-style1 {
+width: 80%;
+margin: 20px auto;
+border: 2px solid navy;
+}
+.table-style1 th, .table-style1 td {
+border: 1px solid navy;
+padding: 10px;
+text-align: center;
+}
+.table-style1 th {
+background-color: lightblue;
+}
+.table-style2 {
+width: 60%;
+margin: 20px auto;
+border-collapse: collapse;
+border: 2px solid darkgreen;
+}
+.table-style2 th, .table-style2 td {
+border: 1px solid darkgreen;
+padding: 10px;
+text-align: center;
+}
+.table-style2 th {
+background-color: lightgreen;
+}
+.about {
+width: 60%;
+margin: 20px auto;
+text-align: left;
+}
+div.mycontainer {
+width:66%;
+overflow:auto;
+}
+div.mycontainer div {
+width:50%;
+float:left;
+}
+.video {
+width: 55%;
+margin: 10px auto;
+text-align: center;
+border: 3px solid green;
+}
+.list-style1 {
+list-style-type: square;
+color: darkblue;
+text-align: left;
+margin: 20px;
+}
+.list-style2 {
+list-style-type: circle;
+color: darkgreen;
+text-align: left;
+margin: 20px;
+}
+
 body {
 background-color:powderblue;
 font-family: Arial;
@@ -42,19 +101,18 @@ Age: 34
 Location: kansas City
 </pre>
 </header>
-<section>
+<section class= "about">
 <p>Check out my favorite website:
 <a href="https://www.chiefs.com/"target=_blank">Kansas City Chiefs</a>
 </p>
 <a href="mailto:hoovanth7@gmail.com"target="_blank">hoovanth7@gmail.com</a>
 <a href="https://www.facebook.com/"target="_blank">
-<img src= "https://github.com/chiefsfan91/Chiefs-Kingdom/blob/main/hoover.jpg?raw=true" alt="Anthony" Pic"></a>
-</section>
-<hr>
+<img src= "https://github.com/chiefsfan91/Chiefs-Kingdom/blob/main/hoover.jpg?raw=true" alt="Anthony Pic" title = "Anthonys Facebook"></a>
+</section> 
 <h2>My Hobbies</h2>
-<table>
+<table class="table-style1">
 <tr>
-<th>Hobby</th>
+<th>hobbies</th>
 <th>Hours/Week</th>
 </tr>
 <tr>
@@ -67,7 +125,7 @@ Location: kansas City
 </tr>
 </table>
 <h2>My Favorite Movies</h2>
-<table>
+<table class="table-style2">
 <tr>
 <th>Movie</th>
 <th>Director</th>
@@ -81,21 +139,27 @@ Location: kansas City
 <td>Joseph Kosinski</td>
 </tr>
 </table>
+<div class= "mycontainer">
+<div>
 <h2>My Favorite Sports Teams</h2>
-<ul>
+<ul class="list-style1">
 <li>Chiefs</li>
 <li>Royals</li>
 <li>Heat</li>
 </ul>
+</div>
+<div>
 <h2>My Favorite Athletes</h2>
-<ul>
+<ul class="list-style2">
 <li>Patrick Mahomes</li>
 <li>Bobby Witt Jr</li>
 <li>Tyler Herro</li>
 </ul>
-<section>
+</div>
+</div>
+<section class= "video">
 <h2>My Favorite Video</h2>
-<video with="580" height="460" controls>
+<video with="480" height="360" controls>
 <source src="https://github.com/chiefsfan91/Chiefs-Kingdom/blob/main/Cats%20Video.mp4?raw=true">
 Your browser does not support the video tag.
 </video>
@@ -105,3 +169,4 @@ Your browser does not support the video tag.
 </iframe>
 </body>
 </html>
+
