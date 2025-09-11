@@ -2,6 +2,20 @@
 <html>
 <head>
 <style>
+.flex-container {
+display: flex;
+justifying-content: space-around;
+background-color: red;
+padding: 20px;
+}
+.flex-item {
+background-color: black;
+color: yellow;
+padding: 20px;
+width: 30&;
+text-align: center;
+}
+  
 body {
 background-image: linear-gradient(to bottom, cornflowerblue 0%, cornsilk 25%, lightcyan 50%, silver 75%, white 100%);
 min-height: 100vh;
@@ -9,6 +23,11 @@ min-height: 100vh;
 </style>
 </head>
 <body>
+<div class=flex-container">
+<div class="flex-item"><a href="https://www.chiefs.com/"target=_blank">Kansas City Chiefs</a></div>
+<div class="flex-item"><a href="https://www.youtube.com/"target=_blank">Kansas City Chiefs</a></div>
+<div class="flex-item"><a href="https://www.facebook.com/"target=_blank">Kansas City Chiefs</a></div>
+</div>
 <form style="margin-top: 30px;",>
 <label for="email">Enter Your Email:</label>
 <input type="email" id="email" name="email" placeholder="you@example.com" required>
